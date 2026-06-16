@@ -1,8 +1,11 @@
+import tkinter as tk
 import requests
 
-api_key = "YOUR_API_KEY"
+api_key = '67099730000ce3e884e1f0ab30c71941'
 
-city = input("Enter a city name: ")
+root = tk.Tk()
+root.title("Weather App")
+root.geometry("400x400")
 
 response = requests.get(
     f"https://api.openweathermap.org/data/2.5/weather?q={city}&appid={api_key}&units=metric"
